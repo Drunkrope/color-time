@@ -7,13 +7,13 @@ function setTime() {
   let m = today.getMinutes();
   let s = today.getSeconds();
 
-  if (h.length === 1) {
+  if (h.toString().length === 1) {
     h = `0${h}`;
   }
-  if (m.length === 1) {
+  if (m.toString().length === 1) {
     m = `0${m}`;
   }
-  if (s.length === 1) {
+  if (s.toString().length === 1) {
     s = `0${s}`;
   }
 
