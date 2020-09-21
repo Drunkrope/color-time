@@ -7,6 +7,7 @@ function setTime() {
   let m = today.getMinutes();
   let s = today.getSeconds();
 
+  // makers sure that there is always 2 digits for every variable
   if (h.toString().length === 1) {
     h = `0${h}`;
   }
@@ -21,4 +22,6 @@ function setTime() {
 
   document.getElementsByTagName("h1")[0].innerText = `#${time}`;
   document.body.style.backgroundColor = `#${time}`;
+
+  document.getElementsByTagName("h2")[0].innerText = `${h}:${m}:${s}`;
 }
